@@ -1,0 +1,3 @@
+function battery
+    acpi
+end
