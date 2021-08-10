@@ -30,15 +30,14 @@ sudo cp doas.conf /etc/;
 
 #sudo micro /etc/doas.conf
 #permit nopass sbatushe as root
-doas ls; #vedi se funzia
 
 #altro
 echo "[installing misc]";
-doas xbps-install -y mc neofetch htop flatpak zip unzip tlp;
+sudo xbps-install -y mc neofetch htop flatpak zip unzip tlp;
 
 #GUI
 echo "[GUI setup]";
-doas xbps-install -y sway evince mirage alacritty;
+sudo xbps-install -y sway evince mirage alacritty;
 
 #alacritty
 echo "[alacritty setup]";
@@ -48,4 +47,4 @@ cp alacritty.yml /home/sbatushe/alacritty/;
 #flatpaks
 
 
-xbps-remove -oO; #apt autoremove
+sudo xbps-remove -oO; #apt autoremove
