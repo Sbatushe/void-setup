@@ -1,12 +1,4 @@
-#DA ESEGUIRE A MANO
-#primo aggiornamento
-
-sudo xbps-install -u xbps
-sudo xbps-install -Su #update
-#sudo xbps-install git
-#git clone ...
-#cd ....
-#sudo ./...
+#SETUP SCRIPT
 
 #fish
 echo "[installing fish shell]"
