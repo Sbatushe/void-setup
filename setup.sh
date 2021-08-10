@@ -7,6 +7,9 @@ chsh -s /bin/fish;
 
 #scorciatoie fish?
 echo "[fish setup]";
+mkdir /home/sbatushe/.config;
+mkdir /home/sbatushe/.config/fish;
+mkdir /home/sbatushe/.config/fish/functions;
 cp fish-functions/battery.fish /home/sbatushe/.config/fish/functions/;
 cp fish-functions/emerge.fish /home/sbatushe/.config/fish/functions/;
 cp fish-functions/lum.fish /home/sbatushe/.config/fish/functions/;
