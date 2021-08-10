@@ -10,5 +10,6 @@ sudo xbps-install -Su #update
 sudo xbps-install git
 git clone https://github.com/Sbatushe/boid-setup
 cd boid-setup
+chmod +x setup.sh
 sudo ./setup.sh
 ```
