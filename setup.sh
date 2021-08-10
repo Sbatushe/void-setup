@@ -2,7 +2,7 @@
 
 #fish
 echo "[installing fish shell]"
-sudo xbps-install fish-shell
+sudo xbps-install -y fish-shell
 chsh -s /bin/fish
 
 #scorciatoie fish?
@@ -18,14 +18,14 @@ cp fish-functions/xr.fish /home/sbatushe/.config/fish/functions/
 
 #micro
 echo "[installing micro]"
-sudo xbps-install curl
+sudo xbps-install -y curl
 curl https://getmic.ro | bash
 sudo mv micro /usr/bin/
 # entra in micro ed usa Ctrl+e, poi set colorscheme simple
 
 #doas
 echo "[installing doas]"
-sudo xbps-install opendoas
+sudo xbps-install -y opendoas
 sudo cp doas.conf /etc/
 
 #sudo micro /etc/doas.conf
@@ -34,11 +34,11 @@ doas ls #vedi se funzia
 
 #altro
 echo "[installing misc]"
-doas xbps-install mc neofetch htop flatpak zip unzip tlp
+doas xbps-install -y mc neofetch htop flatpak zip unzip tlp
 
 #GUI
 echo "[GUI setup]"
-doas xbps-install sway evince mirage alacritty
+doas xbps-install -y sway evince mirage alacritty
 
 #alacritty
 echo "[alacritty setup]"
