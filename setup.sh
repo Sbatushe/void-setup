@@ -3,7 +3,8 @@
 #fish
 echo "[installing fish shell]";
 sudo xbps-install -y fish-shell;
-chsh -s /bin/fish;
+#da eseguire a mano da dentro fish:
+chsh -s ('which fish');
 echo "OK";
 
 #scorciatoie fish?
@@ -57,3 +58,6 @@ sudo ln -s /etc/sv/NetworkManager /var/service/;
 sudo ln -s /etc/sv/gdm var/service/;
 sudo ln -s /etc/sv/dbus /var/service/;
 sudo ln -s /etc/sv/bluetoothd /var/service/;
+
+#Sway e custom DE
+
