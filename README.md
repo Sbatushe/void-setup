@@ -70,7 +70,12 @@ cp alacritty.yml /home/sbatushe/alacritty/;
 ```
 
 ## Sway wm con bordi
-
+```
+sudo xbps-install git meson wlroots wayland wayland-protocols pcre json-c pango cairo scdoc gdk-pixbuf-2 gcc cmake pkg-config libjson-c-devel pcre-devel wayland-devel libxkbcommon-devel cairo-devel pango-devel gdk-pixbuf-devel-2.40.0_3 libevdev-devel libinput-devel wlroots-devel
+git clone https://github.com/fluix-dev/sway-borders
+cd sway-borders
+sudo xbps-remove gcc cmake pkg-config scdoc meson libjson-c-devel pcre-devel wayland-devel libxkbcommon-devel cairo-devel pango-devel gdk-pixbuf-devel-2.40.0_3 libevdev-devel libinput-devel wlroots-devel
+```
 
 ## Flatpak
 
