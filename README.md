@@ -1,15 +1,81 @@
 # Void setup
-My custom void linux installation
+Il mio setup di Void Linux:
 
-
-
-how to configure:
+## Fish shell setup
 ```
-sudo xbps-install -u xbps
-sudo xbps-install -Su #update
-sudo xbps-install git
-git clone https://github.com/Sbatushe/boid-setup
-cd boid-setup
-chmod +x setup.sh
-sudo ./setup.sh
+sudo xbps-install -y fish-shell
+fish
+```
+da eseguire a mano da dentro fish:
+```
+chsh -s ('which fish')
+```
+scorciatoie fish:
+```
+mkdir /home/sbatushe/.config
+mkdir /home/sbatushe/.config/fish
+mkdir /home/sbatushe/.config/fish/functions;
+cp fish-functions/battery.fish /home/sbatushe/.config/fish/functions/
+cp fish-functions/emerge.fish /home/sbatushe/.config/fish/functions/
+cp fish-functions/lum.fish /home/sbatushe/.config/fish/functions/
+cp fish-functions/tutorial.fish /home/sbatushe/.config/fish/functions/
+cp fish-functions/uni.fish /home/sbatushe/.config/fish/functions/
+cp fish-functions/xi.fish /home/sbatushe/.config/fish/functions/
+cp fish-functions/xq.fish /home/sbatushe/.config/fish/functions/
+cp fish-functions/xr.fish /home/sbatushe/.config/fish/functions/
+```
+
+## Micro editor
+```
+sudo xbps-install -y curl;
+curl https://getmic.ro | bash;
+sudo mv micro /usr/bin/;
+```
+entra in micro ed usa Ctrl+e, poi:
+```
+set colorscheme simple
+```
+## Doas
+```
+sudo xbps-install -y opendoas;
+sudo cp doas.conf /etc/;
+```
+oppure, configurare a mano con:
+```
+sudo micro /etc/doas.conf
+```
+e scrivere (con un ritorno a capo alla fine):
+```
+permit nopass sbatushe as root
+```
+
+## Programmi vari
+```
+sudo xbps-install -y mc neofetch htop flatpak zip unzip tlp evince mirage alacritty mesa-dri terminus-font;
+```
+
+## GNOME
+```
+sudo xbps-install -y gnome-40.0_2
+sudo ln -s /etc/sv/NetworkManager /var/service/
+sudo ln -s /etc/sv/gdm var/service/
+sudo ln -s /etc/sv/dbus /var/service/
+sudo ln -s /etc/sv/bluetoothd /var/service/
+```
+
+## Terminale Alacritty
+```
+mkdir /home/sbatushe/alacritty;
+cp alacritty.yml /home/sbatushe/alacritty/;
+```
+
+## Sway wm con bordi
+
+
+## Flatpak
+
+
+## Pulizia finale
+```
+sudo xbps-remove -oO;
 ```
