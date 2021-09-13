@@ -69,9 +69,9 @@ mkdir /home/sbatushe/alacritty;
 cp alacritty.yml /home/sbatushe/alacritty/;
 ```
 
-## Sway wm con bordi (compilato a mano)
+## Sway wm con bordi (incompleto)
 ```
-sudo xbps-install git meson wlroots wayland wayland-protocols pcre json-c pango cairo scdoc gdk-pixbuf-2 gcc cmake pkg-config libjson-c-devel pcre-devel wayland-devel libxkbcommon-devel cairo-devel pango-devel gdk-pixbuf-devel-2.40.0_3 libevdev-devel libinput-devel gegl-devel
+sudo xbps-install git meson wlroots wayland wayland-protocols pcre json-c pango cairo scdoc gdk-pixbuf-2 gcc cmake pkg-config libjson-c-devel pcre-devel wayland-devel libxkbcommon-devel cairo-devel pango-devel gdk-pixbuf-devel-2.40.0_3 libevdev-devel libinput-devel gegl-devel bash-completion
 git clone https://github.com/swaywm/wlroots
 cd wlroots
 meson build/
@@ -81,10 +81,20 @@ git clone https://github.com/fluix-dev/sway-borders
 cd sway-borders
 meson build/
 
-sudo xbps-remove gcc cmake pkg-config scdoc meson libjson-c-devel pcre-devel wayland-devel libxkbcommon-devel cairo-devel pango-devel gdk-pixbuf-devel-2.40.0_3 libevdev-devel libinput-devel gegl-devel
+sudo xbps-remove gcc cmake pkg-config scdoc meson libjson-c-devel pcre-devel wayland-devel libxkbcommon-devel cairo-devel pango-devel gdk-pixbuf-devel-2.40.0_3 libevdev-devel libinput-devel gegl-devel bash-completion
 ```
-## Qtile
+
+## Qtile (incompleto)
+Per Qtile c'è bisogno di `wlroots-devel 0.14`.
 ```
+sudo xbps-install python3-pip python3-devel python3-cffi
+pip3 install pywayland
+pip3 install xkbcommon
+pip3 install cairocffi
+pip3 install dbus-next
+pip3 install pywlroots
+
+
 ```
 
 ## Flatpak
