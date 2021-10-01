@@ -71,8 +71,8 @@ cp alacritty.yml /home/sbatushe/alacritty/;
 
 ## Sway wm con bordi (incompleto)
 ```
-sudo xbps-install git meson wlroots wayland pcre json-c pango cairo gdk-pixbuf-2 gcc cmake pkg-config 
-sudo xbps-install wayland-protocols scdoc libjson-c-devel pcre-devel wayland-devel libxkbcommon-devel cairo-devel pango-devel gdk-pixbuf-devel-2.40.0_3 libevdev-devel libinput-devel gegl-devel bash-completion
+sudo xbps-install git meson wlroots wayland pcre json-c pango cairo gdk-pixbuf-2.40.0_3 gcc cmake pkg-config 
+sudo xbps-install wayland-protocols scdoc jsoncpp-devel pcre-devel wayland-devel libxkbcommon-devel cairo-devel pango-devel gdk-pixbuf-devel-2.40.0_3 libevdev-devel libinput-devel gegl-devel bash-completion
 git clone https://github.com/swaywm/wlroots
 cd wlroots
 meson build/
