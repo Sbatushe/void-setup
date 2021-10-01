@@ -73,16 +73,13 @@ cp alacritty.yml /home/sbatushe/alacritty/;
 ```
 sudo xbps-install git meson wlroots wayland pcre json-c pango cairo gdk-pixbuf-2.40.0_3 gcc cmake pkg-config 
 sudo xbps-install wayland-protocols scdoc jsoncpp-devel pcre-devel wayland-devel libxkbcommon-devel cairo-devel pango-devel gdk-pixbuf-devel-2.40.0_3 libevdev-devel libinput-devel gegl-devel bash-completion
-git clone https://github.com/swaywm/wlroots
-cd wlroots
-meson build/
-sudo ninja -C build/ install
-cd ..
 git clone https://github.com/fluix-dev/sway-borders
 cd sway-borders
+git clone https://github.com/swaywm/wlroots subprojects/wlroots
 meson build/
+sudo ninja -C build/ install
 
-sudo xbps-remove gcc cmake pkg-config scdoc meson libjson-c-devel pcre-devel wayland-devel libxkbcommon-devel cairo-devel pango-devel gdk-pixbuf-devel-2.40.0_3 libevdev-devel libinput-devel gegl-devel bash-completion
+sudo xbps-remove wayland-protocols scdoc jsoncpp-devel pcre-devel wayland-devel libxkbcommon-devel cairo-devel pango-devel gdk-pixbuf-devel-2.40.0_3 libevdev-devel libinput-devel gegl-devel bash-completion
 ```
 
 ## Flatpak
