@@ -84,19 +84,6 @@ meson build/
 sudo xbps-remove gcc cmake pkg-config scdoc meson libjson-c-devel pcre-devel wayland-devel libxkbcommon-devel cairo-devel pango-devel gdk-pixbuf-devel-2.40.0_3 libevdev-devel libinput-devel gegl-devel bash-completion
 ```
 
-## Qtile (incompleto)
-Per Qtile c'è bisogno di `wlroots-devel 0.14`.
-```
-sudo xbps-install python3-pip python3-devel python3-cffi
-pip3 install pywayland
-pip3 install xkbcommon
-pip3 install cairocffi
-pip3 install dbus-next
-pip3 install pywlroots
-
-
-```
-
 ## Flatpak
 
 
