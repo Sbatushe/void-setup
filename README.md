@@ -71,15 +71,15 @@ cp alacritty.yml /home/sbatushe/alacritty/;
 
 ## Sway wm con bordi (incompleto)
 ```
-sudo xbps-install git meson wlroots wayland pcre json-c pango cairo gdk-pixbuf-2.40.0_3 gcc cmake pkg-config 
-sudo xbps-install wayland-protocols scdoc jsoncpp-devel pcre-devel wayland-devel libxkbcommon-devel cairo-devel pango-devel gdk-pixbuf-devel-2.40.0_3 libevdev-devel libinput-devel gegl-devel bash-completion
+sudo xbps-install git meson wlroots wayland pcre json-c pango cairo gdk-pixbuf-2.40.0_3 gcc cmake pkg-config xorg-server-xwayland
+sudo xbps-install wayland-protocols scdoc jsoncpp-devel pcre-devel wayland-devel libxkbcommon-devel cairo-devel pango-devel gdk-pixbuf-devel-2.40.0_3 libevdev-devel libinput-devel gegl-devel bash-completion libseat-devel
 git clone https://github.com/fluix-dev/sway-borders
 cd sway-borders
 git clone https://github.com/swaywm/wlroots subprojects/wlroots
 meson build/
 sudo ninja -C build/ install
 
-sudo xbps-remove wayland-protocols scdoc jsoncpp-devel pcre-devel wayland-devel libxkbcommon-devel cairo-devel pango-devel gdk-pixbuf-devel-2.40.0_3 libevdev-devel libinput-devel gegl-devel bash-completion
+sudo xbps-remove wayland-protocols scdoc jsoncpp-devel pcre-devel wayland-devel libxkbcommon-devel cairo-devel pango-devel gdk-pixbuf-devel-2.40.0_3 libevdev-devel libinput-devel gegl-devel bash-completion libseat-devel
 ```
 
 ## Flatpak
