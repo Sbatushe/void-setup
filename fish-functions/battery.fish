@@ -1,3 +1,3 @@
 function battery
-    acpi
+	acpi
 end
