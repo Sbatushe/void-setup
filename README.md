@@ -79,7 +79,7 @@ git clone https://github.com/swaywm/wlroots subprojects/wlroots
 meson build/
 sudo ninja -C build/ install
 
-sudo xbps-remove wlroots-devel libglib-devel libwacom-devel json-glib-devel libgudev-devel harfbuzz-devel wayland-protocols scdoc jsoncpp-devel pcre-devel wayland-devel libxkbcommon-devel cairo-devel pango-devel gdk-pixbuf-devel-2.40.0_3 libevdev-devel libinput-devel gegl-devel bash-completion libseat-devel xcb-util-renderutil-devel xcb-util-wm-devel json-c-devel
+sudo xbps-remove gtk+3devel at-spi2-atk-devel at-spi2-core-devel colord-devel atk-devel wlroots-devel libglib-devel libwacom-devel json-glib-devel libgudev-devel harfbuzz-devel wayland-protocols scdoc jsoncpp-devel pcre-devel wayland-devel libxkbcommon-devel cairo-devel pango-devel gdk-pixbuf-devel-2.40.0_3 libevdev-devel libinput-devel gegl-devel bash-completion libseat-devel xcb-util-renderutil-devel xcb-util-wm-devel json-c-devel
 ```
 
 ## Flatpak
