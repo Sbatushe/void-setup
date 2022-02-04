@@ -27,9 +27,7 @@ cp fish-functions/xr.fish /home/sbatushe/.config/fish/functions/
 
 ## Micro editor
 ```
-sudo xbps-install -y curl;
-curl https://getmic.ro | bash;
-sudo mv micro /usr/bin/;
+sudo xbps-install -y micro;
 ```
 entra in micro ed usa Ctrl+e, poi:
 ```
