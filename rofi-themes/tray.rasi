@@ -1,0 +1,53 @@
+/******************************************************************************
+ * ROFI Color theme
+ * User: Rasi
+ * Copyright: Rasmus Steinke
+ ******************************************************************************/
+* {
+    bordercolor:                 White;
+    border-color:                @bordercolor;
+    spacing:                     2;
+    background-color:            rgba ( 0, 0, 0, 0 % );
+    text-color: White;
+    font: "Terminus Regular 12";
+}
+#window {
+    background-color: Black;
+    border:           1;
+    padding:          5;
+    width: 20%;
+}
+#mainbox {
+    border:  0;
+    padding: 0;
+}
+#message {
+    border:       1px dash 0px 0px ;
+    border-color: White;
+    padding:      1px ;
+}
+#listview {
+    fixed-height: false;
+    border:       2px dash 0px 0px;
+    border-color: Black;
+    spacing:      0px;
+    scrollbar:    true;
+    padding:      10px 15px 20px;
+}
+#element {
+    border:  0;
+    padding: 1px ;
+}
+#element.normal.normal {
+    background-color: Black;
+}
+#element.selected.normal {
+    background-color: Blue;
+}
+#element.selected.active {
+    background-color: Blue;
+}
+#element.alternate.active {
+    background-color: Black;
+}
+
